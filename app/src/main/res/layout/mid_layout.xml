@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_500">
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@id/favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart"
+        app:tint="#ffffff" />
+
+    <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple"
+        android:padding="1dp"
+        app:layout_constraintEnd_toStartOf="@id/report"
+        app:layout_constraintStart_toEndOf="@id/cart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fav"
+        app:tint="#ffffff" />
+
+    <ImageView
+        android:id="@+id/report"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/favorite"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/report"
+        app:tint="#ffffff" />
+
+    <TextView
+        android:id="@+id/seenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="serif-monospace"
+        android:text="Add"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/cart"
+        app:layout_constraintStart_toStartOf="@id/cart"
+        app:layout_constraintTop_toBottomOf="@id/cart" />
+
+
+    <TextView
+        android:id="@+id/favText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="serif-monospace"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/favorite"
+        app:layout_constraintStart_toStartOf="@id/favorite"
+        app:layout_constraintTop_toBottomOf="@id/favorite" />
+
+
+    <TextView
+        android:id="@+id/shareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="serif-monospace"
+        android:text="Report"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/report"
+        app:layout_constraintStart_toStartOf="@id/report"
+        app:layout_constraintTop_toBottomOf="@id/report" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
